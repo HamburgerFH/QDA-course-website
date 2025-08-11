@@ -1,12 +1,57 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Quantitative Datenanalyse(QDA)",
+    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html",
+    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html",
+    "title": "HFH Veranstaltungswebsite Template",
     "section": "",
-    "text": "Welcome! Hier findest du Skripte, Beispiele und SPSS‑Beispiele für den Kurs. Starte mit einem der Bereiche oder nutze die Suche links.\n\n Grundlagen der Datenanalyse mit SPSS I   Grundlagen der Datenanalyse mit SPSS II   Grundlagen der Datenanalyse mit SPSS III   Komplexe Übung — Aufgaben \n\n\nAktuelles\n\n\n\n\n\n\nNote\n\n\n\nHinweise: Komplexe Übung Termin 01:\n\n\n\n\n\n\n\n\nNote\n\n\n\nHinweise: Komplexe Übung Termin 02:\n\n\n\n\n\n\n\n\nNote\n\n\n\nHinweise: Folien und Notebooks werden laufend ergänzt. Bei Fragen oder Fehlern bitte im GitHub-Menü (links oben) melden.\n\n\n\n\n\nIlya Zarubin (M.Sc.)\nE‑mail: ilya.zarub@campus.hamburger-fh.de\n\nKontakt Über\n\n\n\n\n\n\n Back to top",
+    "text": "Relevant sind hier absolute, relative und kumulierte Häufigkeiten\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten \n\n\n\n\nRelevant: Häufigkeiten unter zutreffen einer Bedingung\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach unter v10_geschlecht = 1\nBefehl: Erst Daten \\(\\ra\\) Fälle auswählen \\(\\ra\\) Falls Bedingung zutrifft und danach Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nbei Fallauswahl z. B. v10_geschlecht = 1\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten",
     "crumbs": [
-      "Home"
+      "Grundlagen der Datenanalyse 2",
+      "SPSS Anwendungen 2"
+    ]
+  },
+  {
+    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#grundlagen-der-datenanalyse-mit-spss-ii",
+    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#grundlagen-der-datenanalyse-mit-spss-ii",
+    "title": "HFH Veranstaltungswebsite Template",
+    "section": "",
+    "text": "Relevant sind hier absolute, relative und kumulierte Häufigkeiten\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten \n\n\n\n\nRelevant: Häufigkeiten unter zutreffen einer Bedingung\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach unter v10_geschlecht = 1\nBefehl: Erst Daten \\(\\ra\\) Fälle auswählen \\(\\ra\\) Falls Bedingung zutrifft und danach Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nbei Fallauswahl z. B. v10_geschlecht = 1\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten",
+    "crumbs": [
+      "Grundlagen der Datenanalyse 2",
+      "SPSS Anwendungen 2"
+    ]
+  },
+  {
+    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#berechnung-von-statistischen-kennwerten",
+    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#berechnung-von-statistischen-kennwerten",
+    "title": "HFH Veranstaltungswebsite Template",
+    "section": "Berechnung von statistischen Kennwerten",
+    "text": "Berechnung von statistischen Kennwerten\n\nLage- und Streuungsmaße\n\nDaten: Zentrum1_Spieldaten.sav für !metrisches! z. B. v13_2_gew_nach\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v13_2_gew_nach oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links deaktivieren\n\nunter Statistiken Mittelwert, Median, Modus, Standardabweichung, Varianz, Minimum, Maximum, Quartile auswählen\n\nAchtung: bedingte Lage- und Streuungsmaße analog zu davor: Daten \\(\\ra\\) Fälle auswählen \\(\\ra\\) Falls Bedingung zutrifft",
+    "crumbs": [
+      "Grundlagen der Datenanalyse 2",
+      "SPSS Anwendungen 2"
+    ]
+  },
+  {
+    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#erstellen-von-grafiken",
+    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#erstellen-von-grafiken",
+    "title": "HFH Veranstaltungswebsite Template",
+    "section": "Erstellen von Grafiken",
+    "text": "Erstellen von Grafiken\n\nBalkendiagramm\n\nDaten: Zentren_gesamt.sav für v14_1_rauch_vor\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_1_rauch_vor oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links aktivieren zum Vergleich\n\nunter Diagramme die Balkendiagramme auswählen\n\nunter Diagrammwerte z. B. Häufigkeiten auswählen\n \n\n\n\n\nKreisdiagramm\n\nDaten: Zentren_gesamt.sav für v14_1_rauch_vor\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_1_rauch_vor oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links aktivieren zum Vergleich\n\nunter Diagramme die Kreisdiagramm auswählen\n\nunter Diagrammwerte z. B. Prozentwerte auswählen\n \n\n\n\n\nHistogramm\n\nDaten: Zentren_gesamt.sav für v13_1_gew_vor\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_1_rauch_vor oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links DEAKTIVIEREN\n\nunter Diagramme die Histogramm auswählen\n\nebenfalls Normalverteilungskurve im Histogramm anzeigen auswählen\n\n\n\n\n\nBoxplot\n\nIdee: Ausreißer und Normalverteilung\n\nDaten: Zentren_gesamt.sav für v15_sport\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Explorative Datenanalyse\n\nentsprechend Variablen z. B. v15_sport oder mehrere auswählen\n\nBeides unten links AKTIVIEREN, Diagramme oben rechts auswählen und Stengel-Blatt deaktivieren\n\n\nAusreißer: mindestens 1,5 × Interquartilsabstand vom Median; hier 36 als Zeilennummer des Ausreißers\n\nWhisker/Schnurrhaare sind Maximum bzw. Minimum (ohne Ausreißer)\n\ngraue Box: unteres/oberes Quartil und Median\n\n\n\n\nEditieren von Tabellen und Grafiken: Anpassung vorhandener Ausgaben\nRelevant: Verschönerung bereits vorhandener statistischer Analysen\n\nTabellen: mit Rechtsklick auswählen \\(\\ra\\) Inhalt bearbeiten (ganz unten) \\(\\ra\\) in separatem Fenster\n\nGrafiken: genauso!",
+    "crumbs": [
+      "Grundlagen der Datenanalyse 2",
+      "SPSS Anwendungen 2"
+    ]
+  },
+  {
+    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#vergleich-dichotomer-variablen",
+    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#vergleich-dichotomer-variablen",
+    "title": "HFH Veranstaltungswebsite Template",
+    "section": "Vergleich dichotomer Variablen",
+    "text": "Vergleich dichotomer Variablen\n\nEinführung\nSchätz- und Testverfahren für den Vergleich dichotomer Variablen\n\ndichotome Variablen: zwei Gruppen, z. B. Frauen und Männer\n\ndemnach zwei Ausprägungen: 0 und 1 oder 1 und 2 etc.\n\nhier werden oft Raten und Anteile ermittelt, z. B.:\n\n64 von 90 Teilnehmern sind Frauen \\(\\ra\\) etwa 71,11 %\n\n\n\n\nKreuztabellen\nRelevant: deskriptive Beschreibung als erster Schritt; danach statistische Tests\n\nDaten: Zentren_gesamt.sav die Variable v18_chron_Erkrankung dichotomisieren\n\nBefehl I: Transformieren \\(\\ra\\) Umcodieren \\(\\ra\\) Umcodieren in andere Variable\n\n‘’Leerzeile’’ \\(~~\\;\\ra\\) 0\n‘’alles andere’’ \\(\\ra\\) 1\n\n\nBefehl II: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Kreuztabellen\n\nZeilen: unabhängige Variable hier v10_geschlecht\n\nSpalte: abhängige Variable hier v18_chron_Erkrankung_dichotom\n\nhier Zeilenprozente: Zellen \\(\\ra\\) Prozentwerte \\(\\ra\\) Zeilenweise\n\n\n\n\n\nChi-Quadrat-Tests\nRelevant: deskriptiver Unterschied könnte auch insignifikant sein, daher stat. Tests\n\nDaten: Zentren_gesamt.sav für v18_chron_Erkrankung_dich und v10_geschlecht\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Kreuztabellen\n\nStatistiken \\(\\ra\\) Chi-Quadrat anklicken\n\nH₀: kein Unterschied vs. H₁: es gibt einen Unterschied zwischen Gruppen\n\nBerechnungsarten: am gebräuchlichsten ist Pearson\n\npotentiell auch 2×3, 3×2, 3×3 usw. Tabellen möglich",
+    "crumbs": [
+      "Grundlagen der Datenanalyse 2",
+      "SPSS Anwendungen 2"
     ]
   },
   {
@@ -29,6 +74,26 @@
     "crumbs": [
       "Grundlagen der Datenanalyse mit SPSS 3",
       "SPSS Anwendungen 3"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Quantitative Datenanalyse(QDA)",
+    "section": "",
+    "text": "Welcome! Hier findest du Skripte, Beispiele und SPSS‑Beispiele für den Kurs. Starte mit einem der Bereiche oder nutze die Suche links.\n\n Grundlagen der Datenanalyse mit SPSS I   Grundlagen der Datenanalyse mit SPSS II   Grundlagen der Datenanalyse mit SPSS III   Komplexe Übung — Aufgaben \n\n\nAktuelles\n\n\n\n\n\n\nNote\n\n\n\nHinweise: Komplexe Übung Termin 01:\n\n\n\n\n\n\n\n\nNote\n\n\n\nHinweise: Komplexe Übung Termin 02:\n\n\n\n\n\n\n\n\nNote\n\n\n\nHinweise: Folien und Notebooks werden laufend ergänzt. Bei Fragen oder Fehlern bitte im GitHub-Menü (links oben) melden.\n\n\n\n\n\nIlya Zarubin (M.Sc.)\nE‑mail: ilya.zarub@campus.hamburger-fh.de\n\nKontakt Über\n\n\n\n\n\n\n Back to top",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "About this site\n\n\n\n Back to top",
+    "crumbs": [
+      "About"
     ]
   },
   {
@@ -84,71 +149,6 @@
     "crumbs": [
       "Komplexe Übung",
       "Aufgabenstellung"
-    ]
-  },
-  {
-    "objectID": "about.html",
-    "href": "about.html",
-    "title": "About",
-    "section": "",
-    "text": "About this site\n\n\n\n Back to top",
-    "crumbs": [
-      "About"
-    ]
-  },
-  {
-    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html",
-    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html",
-    "title": "HFH Veranstaltungswebsite Template",
-    "section": "",
-    "text": "Relevant sind hier absolute, relative und kumulierte Häufigkeiten\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten \n\n\n\n\nRelevant: Häufigkeiten unter zutreffen einer Bedingung\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach unter v10_geschlecht = 1\nBefehl: Erst Daten \\(\\ra\\) Fälle auswählen \\(\\ra\\) Falls Bedingung zutrifft und danach Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nbei Fallauswahl z. B. v10_geschlecht = 1\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten",
-    "crumbs": [
-      "Grundlagen der Datenanalyse 2",
-      "SPSS Anwendungen 2"
-    ]
-  },
-  {
-    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#grundlagen-der-datenanalyse-mit-spss-ii",
-    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#grundlagen-der-datenanalyse-mit-spss-ii",
-    "title": "HFH Veranstaltungswebsite Template",
-    "section": "",
-    "text": "Relevant sind hier absolute, relative und kumulierte Häufigkeiten\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten \n\n\n\n\nRelevant: Häufigkeiten unter zutreffen einer Bedingung\n\nDaten: Zentrum1_Spieldaten.sav für v14_2_rauch_nach unter v10_geschlecht = 1\nBefehl: Erst Daten \\(\\ra\\) Fälle auswählen \\(\\ra\\) Falls Bedingung zutrifft und danach Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nbei Fallauswahl z. B. v10_geschlecht = 1\n\nentsprechend Variablen z. B. v14_2_rauch_nach auswählen\n\nmehrere Variablen auswählen ebenfalls möglich\n\nHäufigkeitstabelle anzeigen unten links auswählen und Ok\n\nSpalten: Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten",
-    "crumbs": [
-      "Grundlagen der Datenanalyse 2",
-      "SPSS Anwendungen 2"
-    ]
-  },
-  {
-    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#berechnung-von-statistischen-kennwerten",
-    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#berechnung-von-statistischen-kennwerten",
-    "title": "HFH Veranstaltungswebsite Template",
-    "section": "Berechnung von statistischen Kennwerten",
-    "text": "Berechnung von statistischen Kennwerten\n\nLage- und Streuungsmaße\n\nDaten: Zentrum1_Spieldaten.sav für !metrisches! z. B. v13_2_gew_nach\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v13_2_gew_nach oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links deaktivieren\n\nunter Statistiken Mittelwert, Median, Modus, Standardabweichung, Varianz, Minimum, Maximum, Quartile auswählen\n\nAchtung: bedingte Lage- und Streuungsmaße analog zu davor: Daten \\(\\ra\\) Fälle auswählen \\(\\ra\\) Falls Bedingung zutrifft",
-    "crumbs": [
-      "Grundlagen der Datenanalyse 2",
-      "SPSS Anwendungen 2"
-    ]
-  },
-  {
-    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#erstellen-von-grafiken",
-    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#erstellen-von-grafiken",
-    "title": "HFH Veranstaltungswebsite Template",
-    "section": "Erstellen von Grafiken",
-    "text": "Erstellen von Grafiken\n\nBalkendiagramm\n\nDaten: Zentren_gesamt.sav für v14_1_rauch_vor\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_1_rauch_vor oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links aktivieren zum Vergleich\n\nunter Diagramme die Balkendiagramme auswählen\n\nunter Diagrammwerte z. B. Häufigkeiten auswählen\n \n\n\n\n\nKreisdiagramm\n\nDaten: Zentren_gesamt.sav für v14_1_rauch_vor\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_1_rauch_vor oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links aktivieren zum Vergleich\n\nunter Diagramme die Kreisdiagramm auswählen\n\nunter Diagrammwerte z. B. Prozentwerte auswählen\n \n\n\n\n\nHistogramm\n\nDaten: Zentren_gesamt.sav für v13_1_gew_vor\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Häufigkeiten\n\nentsprechend Variablen z. B. v14_1_rauch_vor oder mehrere auswählen\n\nHäufigkeitstabelle anzeigen unten links DEAKTIVIEREN\n\nunter Diagramme die Histogramm auswählen\n\nebenfalls Normalverteilungskurve im Histogramm anzeigen auswählen\n\n\n\n\n\nBoxplot\n\nIdee: Ausreißer und Normalverteilung\n\nDaten: Zentren_gesamt.sav für v15_sport\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Explorative Datenanalyse\n\nentsprechend Variablen z. B. v15_sport oder mehrere auswählen\n\nBeides unten links AKTIVIEREN, Diagramme oben rechts auswählen und Stengel-Blatt deaktivieren\n\n\nAusreißer: mindestens 1,5 × Interquartilsabstand vom Median; hier 36 als Zeilennummer des Ausreißers\n\nWhisker/Schnurrhaare sind Maximum bzw. Minimum (ohne Ausreißer)\n\ngraue Box: unteres/oberes Quartil und Median\n\n\n\n\nEditieren von Tabellen und Grafiken: Anpassung vorhandener Ausgaben\nRelevant: Verschönerung bereits vorhandener statistischer Analysen\n\nTabellen: mit Rechtsklick auswählen \\(\\ra\\) Inhalt bearbeiten (ganz unten) \\(\\ra\\) in separatem Fenster\n\nGrafiken: genauso!",
-    "crumbs": [
-      "Grundlagen der Datenanalyse 2",
-      "SPSS Anwendungen 2"
-    ]
-  },
-  {
-    "objectID": "include/02_vorlesung_datenanalyse_SPSS_II.html#vergleich-dichotomer-variablen",
-    "href": "include/02_vorlesung_datenanalyse_SPSS_II.html#vergleich-dichotomer-variablen",
-    "title": "HFH Veranstaltungswebsite Template",
-    "section": "Vergleich dichotomer Variablen",
-    "text": "Vergleich dichotomer Variablen\n\nEinführung\nSchätz- und Testverfahren für den Vergleich dichotomer Variablen\n\ndichotome Variablen: zwei Gruppen, z. B. Frauen und Männer\n\ndemnach zwei Ausprägungen: 0 und 1 oder 1 und 2 etc.\n\nhier werden oft Raten und Anteile ermittelt, z. B.:\n\n64 von 90 Teilnehmern sind Frauen \\(\\ra\\) etwa 71,11 %\n\n\n\n\nKreuztabellen\nRelevant: deskriptive Beschreibung als erster Schritt; danach statistische Tests\n\nDaten: Zentren_gesamt.sav die Variable v18_chron_Erkrankung dichotomisieren\n\nBefehl I: Transformieren \\(\\ra\\) Umcodieren \\(\\ra\\) Umcodieren in andere Variable\n\n‘’Leerzeile’’ \\(~~\\;\\ra\\) 0\n‘’alles andere’’ \\(\\ra\\) 1\n\n\nBefehl II: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Kreuztabellen\n\nZeilen: unabhängige Variable hier v10_geschlecht\n\nSpalte: abhängige Variable hier v18_chron_Erkrankung_dichotom\n\nhier Zeilenprozente: Zellen \\(\\ra\\) Prozentwerte \\(\\ra\\) Zeilenweise\n\n\n\n\n\nChi-Quadrat-Tests\nRelevant: deskriptiver Unterschied könnte auch insignifikant sein, daher stat. Tests\n\nDaten: Zentren_gesamt.sav für v18_chron_Erkrankung_dich und v10_geschlecht\nBefehl: Analysieren \\(\\ra\\) Deskriptive Statistiken \\(\\ra\\) Kreuztabellen\n\nStatistiken \\(\\ra\\) Chi-Quadrat anklicken\n\nH₀: kein Unterschied vs. H₁: es gibt einen Unterschied zwischen Gruppen\n\nBerechnungsarten: am gebräuchlichsten ist Pearson\n\npotentiell auch 2×3, 3×2, 3×3 usw. Tabellen möglich",
-    "crumbs": [
-      "Grundlagen der Datenanalyse 2",
-      "SPSS Anwendungen 2"
     ]
   },
   {
