@@ -31,19 +31,24 @@ Starte mit einem der Bereiche oder nutze die Suche links.
 
 ### Aktuelles {.mt-4}
 
-::: {.callout-note}
-**Hinweise:** Komplexe Übung Termin 01:
+::: {.callout-important}
+[**WICHTIG:**]{.underline} Alle relevanten und verbindlichen Informationen 
+(Klausurtermine / Änderungen / Regularien) nur auf den HFH Seiten 
+und im Webcampus $\ra$ regelmäßig vorbeischauen !
 :::
 
-::: {.callout-note}
-**Hinweise:** Komplexe Übung Termin 02:
+::: {.callout-caution}
+[**Hinweise:**]{.underline} Komplexe Übung 01: [01.11.2025]{.underline .ctl}
 :::
 
-::: {.callout-note}
+::: {.callout-caution}
+[**Hinweise:**]{.underline} Komplexe Übung 02: [29.11.2025]{.underline .ctl}
+:::
+
+::: {.callout-tip}
 **Hinweise:** Folien und Notebooks werden laufend ergänzt. Bei Fragen oder
 Fehlern bitte im GitHub-Menü (links oben) melden.
 :::
-
 
 :::
 ::: {.column width="35%"}
