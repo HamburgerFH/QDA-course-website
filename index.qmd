@@ -1,0 +1,62 @@
+---
+title: "Quantitative Datenanalyse(QDA)"
+subtitle: "Kursportal & Materialien"
+page-layout: full
+toc: false
+title-block-banner: true     # uses a subtle banner (we'll style it)
+title-block-banner-color: white
+---
+
+::: {.columns}
+::: {.column width="65%"}
+
+Welcome! Hier findest du Skripte, Beispiele und `SPSS`‑Beispiele für den Kurs.
+Starte mit einem der Bereiche oder nutze die Suche links.
+
+<div class="home-cta">
+  <a class="btn btn-primary btn-cta" href="./include/01_vorlesung_datenanalyse_SPSS_I.qmd">
+    Grundlagen der Datenanalyse mit SPSS I
+  </a>
+  <a class="btn btn-outline-primary btn-cta" href="./include/02_vorlesung_datenanalyse_SPSS_II.qmd">
+    Grundlagen der Datenanalyse mit SPSS II
+  </a>
+  <a class="btn btn-outline-primary btn-cta" href="./include/03_vorlesung_datenanalyse_SPSS_III.qmd">
+    Grundlagen der Datenanalyse mit SPSS III
+  </a>
+  <a class="btn btn-outline-secondary btn-cta" href="include/04_komplexe_uebung.qmd">
+    Komplexe Übung --- Aufgaben
+  </a>
+</div>
+
+
+### Aktuelles {.mt-4}
+
+::: {.callout-note}
+**Hinweise:** Komplexe Übung Termin 01:
+:::
+
+::: {.callout-note}
+**Hinweise:** Komplexe Übung Termin 02:
+:::
+
+::: {.callout-note}
+**Hinweise:** Folien und Notebooks werden laufend ergänzt. Bei Fragen oder
+Fehlern bitte im GitHub-Menü (links oben) melden.
+:::
+
+
+:::
+::: {.column width="35%"}
+
+![](assets/logo_hfh.png){.home-logo}
+
+**Ilya Zarubin (M.Sc.)**  
+E‑mail: ilya.zarub@campus.hamburger-fh.de
+
+<div class="d-flex gap-2 mt-2">
+  <a class="btn btn-sm btn-outline-secondary" href="mailto:ilya.zarub@campus.hamburger-fh.de">Kontakt</a>
+  <a class="btn btn-sm btn-outline-secondary" href="https://github.com/ilyaZar/">Über</a>
+</div>
+
+:::
+:::

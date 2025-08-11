@@ -1,0 +1,73 @@
+project:
+  type: website
+  preview:
+    port: 4444       # preview: immer auf diesem Port
+    browser: false   # don’t auto-open a new tab
+
+# Global execution policy: cache + freeze for fast rebuilds
+execute:
+  cache: true        # use knitr cache for R chunks
+  freeze: auto       # only re-execute pages when their source changes
+
+website:
+  title: "HFH Veranstaltungswebsite Template"
+  page-footer: 
+    left: "Copyright 2025, Ilya Zarubin" 
+    right: 
+      - icon: github
+        href: https://github.com/ilyaZar/
+      - icon: twitter 
+        href: https://x.com/ilyaazarubin
+  back-to-top-navigation: true
+  page-navigation: true
+  sidebar:
+    style: "docked"
+    search: true
+    logo: assets/logo_hfh.png 
+    tools:
+      - icon: github
+        menu:
+          - text: Source Code
+            href: https://github.com/orgs/HamburgerFH/dashboard
+          - text: Report a Bug
+            href: https://github.com/orgs/HamburgerFH/dashboard
+      - icon: linkedin
+        href: https://www.linkedin.com/school/hamburger-fern-hochschule/
+      - icon: youtube
+        href: https://www.youtube.com/user/HFHFernhochschule
+      - icon: instagram
+        href: https://www.instagram.com/hfhfernstudium/
+    contents:
+      - text: Home
+        href: index.qmd
+      - text: "---"
+      - section: "Grundlagen der Datenanalyse 1"
+        contents:
+          - href: ./include/01_vorlesung_datenanalyse_SPSS_I.qmd
+            text: "SPSS Anwendungen 1"
+      - section: "Grundlagen der Datenanalyse 2"
+        contents: 
+          - href: ./include/02_vorlesung_datenanalyse_SPSS_II.qmd
+            text: "SPSS Anwendungen 2"
+      - section: "Grundlagen der Datenanalyse mit SPSS 3"
+        contents: 
+          - href: ./include/03_vorlesung_datenanalyse_SPSS_III.qmd
+            text: "SPSS Anwendungen 3"
+      - text: "---"
+      - section: "Komplexe Übung"
+        contents: 
+          - href: ./include/04_komplexe_uebung.qmd
+            text: "Aufgabenstellung"
+      - about.qmd
+
+format:
+  html:
+    html-math-method: mathjax
+    include-in-header:
+      - file: mathjax-macros.html
+    theme:
+      - cosmo
+      - brand
+      - custom.scss
+    css: styles.css
+    toc: true

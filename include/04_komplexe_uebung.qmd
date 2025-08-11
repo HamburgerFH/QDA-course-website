@@ -1,0 +1,148 @@
+## Komplexe Übung --- Aufgabenstellungen
+
+
+
+### Einführung und Kennenlernen {.unlisted}
+
+
+- Heute geht es um das Gedächtnis $\ra$ Warmup / Ice-breaker:
+
+    - *Rufen Sie sich subjektiv wichtige / interessante Dinge aus dem Bereich "empirische Forschung"" ins Gedächtnis und erzählen Sie uns etwas darüber*
+
+- 2-minütiges Brainstorming: überlegen Sie sich stichpunktartig, welche Aspekte der empirischen Forschung Ihnen in Erinnerung geblieben sind 
+
+  - Vorlesungen zur Statistik, Dokumentarfilme, Zeitungsartikel  
+
+  - Bildzeitung, Instagram, Podcasts, Interviews  
+
+  - Berufliche Erfahrungen, Gespräche mit Freunden  
+
+
+
+### Ablauf – Überblick {.unlisted}
+
+- Einteilung in Gruppen von 3–4 Personen – Breakoutrooms
+
+- mindestens eine Person SPSS – hilfreich ist eine weitere Person mit Excel
+
+- Bearbeitung von Aufgaben in Gruppenarbeit nach eigenem Tempo
+
+- Pausen nach Gefühl und Tempo in Ihrer Gruppe – frei wählbar
+
+- Studienbriefe selbstverständlich benutzen!
+
+- Bei Fragen: benachrichtigen Sie mich und ich komme dann in das Breakoutroom
+
+- **Definition aktive Teilnahme:** Sie nehmen ja bereits aktiv teilgenommen :)
+
+- **Definition sachkundige Teilnahme:** Sie sind sicherlich sachkundig und haben die Studienbriefe aufmerksam gelesen :)
+
+- [**_Bitte geben Sie sich in Ihrem eigenen Interesse (mögliche Abschlussarbeit mit empirischem Anteil / Fragestellung)_**]{.ctl} trotzdem Mühe !!!  
+
+
+
+### Ablauf – Details {.unlisted}
+
+![](/figs/ABLAUF_UEBERBLICK_DETAILS.PNG)
+
+
+
+### Fallstudie {.unlisted}
+
+- Als studentische Arbeitsgruppe unterstützen Sie ein größeres Forscherteam
+
+- [**Forschungsprojekt:**]{.underline} Funktion des verbalen Gedächtnisses
+
+- [**Besonderes Interesse:**]{.underline} Einflussfaktoren auf das verbale Gedächtnis herausfinden!!
+
+- mögliche Einflussfaktoren:
+
+  1. **_TRAIT_**-Variablen – mögliche direkte oder indirekte Einflüsse auf das verbale Gedächtnis, **_die in der Person begründet sind wie z. B. Persönlichkeits- oder Charaktereigenschaften_** (Aufgabe 1)
+
+  2. **_STATE_**-Variablen – aktuelles Stresserleben, Konzentrationsfähigkeit, Müdigkeit und Befindlichkeit (Aufgabe 2 $\ra$ Visuelle Analogskalen)
+
+  3. **Beispiele:** Alter, Geschlecht, Kohorte u. ä. Meta-Variablen
+
+- [**_Start:_**]{.underline} Entwickeln eines kleinen Mini-Fragebogens (Block I) ⇒ Erfassen möglicher Einflüsse auf das verbale Gedächtnis
+
+- [**_Ziel:_**]{.underline} Deskriptive (Block II) und Inferenzanalyse (Block III) dieser **_Einflussfaktoren auf die verbale Gedächtnisleistung!!_**  
+
+
+
+## Aufgabenblock I – Fragebogenentwicklung / Datengenerierung
+
+
+
+### Aufgabe 1 {.unlisted}
+
+- mögliche direkte oder indirekte Einflüsse auf das verbale Gedächtnis, **_die in der Person begründet sind wie z. B. Persönlichkeits- oder Charaktereigenschaften_**:  
+  - *Aufmerksamkeitsdefizit* (neg. konnotiert) oder *Sprachkompetenz* (pos. konnotiert)  
+
+![](/figs/BLOCK_01_aufgabe_01.PNG)
+
+
+
+### Aufgabe 2 {.unlisted}
+
+
+![](/figs/BLOCK_01_aufgabe_02.PNG)
+
+[**_Hilfreich:_**]{.underline .ctl}
+
+- nutzen Sie z. B. Excel, um die Antworten auf die Fragen pro Gruppenteilnehmer:in tabellenartig zu erfassen (alternativ für Mac-User: natürlich andere Software möglich)  
+
+- sowohl eigene Trait-Variablen (Aufgabe 1) als auch eigene State-Variablen (visuelle Analogskalen) beantworten und erfassen  
+
+- danach: Rücksprache mit Lehrperson für den gemeinsamen kognitiven Test $\ra$ **_empirische Erfassung der abhängigen Variable "Gedächtnisleistung"_**  
+
+
+
+### Aufgabe 3 und 4 {.unlisted}
+
+![](/figs/BLOCK_01_aufgabe_03_04.PNG)
+
+[**_Anmerkung:_**]{.underline .crd} am besten in Excel erstellen und dann in SPSS einfügen!!!  
+
+
+
+## Aufgabenblock II – Datenmanagement und deskriptive Analysen
+
+
+
+### Einleitung {.unlisted}
+
+- Ihre Forschergruppe hat Daten aus drei weiteren Teilprojekten zusammengetragen. Aufgrund der hohen Stichprobengröße (N = 60) entscheiden Sie sich dafür, für weitere Analysen erstmal nur die neuen Daten aus den drei Teilprojekten Zentrum X, Zentrum Y und Zentrum Z zusammen zu analysieren (und Ihre eigenen Daten später hinzuzuschalten).  
+- Die drei zusätzlichen Teilprojekte umfassen Versuchspersonen (Psychologiestudierende) aus drei Studienzentren X, Y und Z. Die Versuchspersonen, die an den Studienzentren Y und Z rekrutiert wurden, wiesen keine offensichtlichen außergewöhnlichen Eigenschaften auf. Die Proband:innen aus Studienzentrum X wurden aus wissenschaftlichen Hilfskräften des Schlaflabors rekrutiert, die zum Zeitpunkt der Datenerhebung gerade eine Nachtschicht hinter sich gebracht haben …  
+- Nach der erfolgreichen Datenerhebung und Datenübertragung Ihrer Daten erfolgt nun der Schritt der Bildung der Skalen Ihres Trait-Fragebogens. Zur reinen Berechnung von Skalenwerten wird häufig ein Summenwert der Fragebogenitems gebildet. Allerdings wurden zwei Items je Skala invers formuliert. Damit ein sinnvoller Summenwert gebildet werden kann, müssen die invers formulierten Items umcodiert werden!  
+
+
+
+### Aufgaben 1 – 3 {.unlisted}
+
+![](/figs/BLOCK_02_Aufgabe_01_02_03.PNG)
+
+
+
+## Aufgabenblock III – Inferenzstatistische Analysen und Ergebnisinterpretation
+
+
+
+### Einleitung {.unlisted}
+
+- Nach erfolgreicher Berechnung deskriptiver Kennwerte folgt nun das Kernstück einer empirischen Forschungsarbeit: die inferenzstatistischen Analysen  
+- Überlegen Sie, vor dem Hintergrund der Forschungsfrage (Analysen der Determinanten der Gedächtnisleistung), welche Variablen hier als abhängige Variablen in Frage kommen! **_Hinweis: insgesamt 4 Möglichkeiten!_**  
+- Beschränken Sie sich bei Ihren Analysen zunächst auf eine abhängige Variable, z. B. Anzahl korrekter Antworten im kognitiven Test.  
+- Wenn Sie nach Berechnung der unten stehenden Aufgaben noch genügend Zeit zur Verfügung haben, können Sie weitere Analysen, gerne auch mit einem anderen Fokus, weiteren abhängigen oder unabhängigen Variablen durchführen  
+- Speichern Sie die SPSS-Syntax und/oder Output-Datei ab oder fassen Sie Ihre Ergebnisse in Excel zusammen!  
+
+
+
+### Aufgaben 1 – 6 {.unlisted}
+
+![](/figs/BLOCK_03_Aufgabe_01_02_03_04_05_06.PNG)
+
+
+
+### Deskriptive Analysen – Lösung {.unlisted}
+
+![](/figs/BLOCK_02_LOESUNG.PNG)

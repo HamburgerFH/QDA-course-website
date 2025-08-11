@@ -1,0 +1,153 @@
+## Grundlagen der Datenanalyse mit SPSS (II)
+
+
+
+### Einführung in Häufigkeitstabellen {.unlisted}
+
+**Relevant sind hier absolute, relative und kumulierte Häufigkeiten**
+
+- **Daten:** *Zentrum1_Spieldaten.sav* für **v14_2_rauch_nach**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Häufigkeiten*
+
+  - entsprechend Variablen z. B. **v14_2_rauch_nach** auswählen  
+  - mehrere Variablen auswählen ebenfalls möglich  
+  - *Häufigkeitstabelle anzeigen* unten links auswählen und *Ok*  
+
+- [**Spalten:**]{.underline} Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten
+![](/figs/02_haeufigkeitstabellen_01.png)
+
+
+### Bedingte Häufigkeitszählung {.unlisted}
+
+**Relevant: Häufigkeiten unter zutreffen einer Bedingung**
+
+- **Daten:** *Zentrum1_Spieldaten.sav* für **v14_2_rauch_nach** unter **v10_geschlecht** = 1
+
+- **Befehl:** Erst *Daten* $\ra$ *Fälle auswählen* $\ra$ *Falls Bedingung zutrifft* **und danach** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Häufigkeiten*  
+  
+  - bei Fallauswahl z. B. **v10_geschlecht** = 1  
+  - entsprechend Variablen z. B. **v14_2_rauch_nach** auswählen  
+  - mehrere Variablen auswählen ebenfalls möglich  
+  - *Häufigkeitstabelle anzeigen* unten links auswählen und *Ok*  
+
+- [**Spalten:**]{.underline} Merkmal, absolute, relative, gültige Prozente und kumulierte Häufigkeiten
+![](/figs/02_haeufigkeitstabellen_02.png)
+
+
+
+## Berechnung von statistischen Kennwerten
+
+
+
+### Lage- und Streuungsmaße {.unlisted}
+
+- **Daten:** *Zentrum1_Spieldaten.sav* für **!metrisches!** z. B. **v13_2_gew_nach**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Häufigkeiten*
+
+  - entsprechend Variablen z. B. **v13_2_gew_nach** oder mehrere auswählen  
+  - *Häufigkeitstabelle anzeigen* unten links **deaktivieren**  
+  - unter *Statistiken* Mittelwert, Median, Modus, Standardabweichung, Varianz, Minimum, Maximum, Quartile auswählen  
+
+- **Achtung:** bedingte Lage- und Streuungsmaße analog zu davor: *Daten* $\ra$ *Fälle auswählen* $\ra$ *Falls Bedingung zutrifft*
+![](/figs/03_stat_kennwerte_01.png)
+
+
+
+## Erstellen von Grafiken
+
+
+
+### Balkendiagramm {.unlisted}
+
+- **Daten:** **_Zentren_gesamt.sav_** für **v14_1_rauch_vor**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Häufigkeiten*  
+  - entsprechend Variablen z. B. **v14_1_rauch_vor** oder mehrere auswählen  
+  - *Häufigkeitstabelle anzeigen* unten links **aktivieren** zum Vergleich  
+  - unter *Diagramme* die *Balkendiagramme* auswählen  
+  - unter *Diagrammwerte* z. B. *Häufigkeiten* auswählen  
+![](/figs/04_grafiken_01.png)
+![](/figs/04_grafiken_02.png)
+
+
+### Kreisdiagramm {.unlisted}
+
+- **Daten:** **_Zentren_gesamt.sav_** für **v14_1_rauch_vor**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Häufigkeiten*  
+  - entsprechend Variablen z. B. **v14_1_rauch_vor** oder mehrere auswählen  
+  - *Häufigkeitstabelle anzeigen* unten links **aktivieren** zum Vergleich  
+  - unter *Diagramme* die *Kreisdiagramm* auswählen  
+  - unter *Diagrammwerte* z. B. *Prozentwerte* auswählen  
+![](/figs/04_grafiken_03.png)
+![](/figs/04_grafiken_04.png)
+
+
+### Histogramm {.unlisted}
+
+- **Daten:** **_Zentren_gesamt.sav_** für **v13_1_gew_vor**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Häufigkeiten*  
+  - entsprechend Variablen z. B. **v14_1_rauch_vor** oder mehrere auswählen  
+  - *Häufigkeitstabelle anzeigen* unten links **DEAKTIVIEREN**  
+  - unter *Diagramme* die *Histogramm* auswählen  
+  - ebenfalls *Normalverteilungskurve im Histogramm anzeigen* auswählen  
+![](/figs/04_grafiken_05.png)
+
+
+### Boxplot {.unlisted}
+
+- **Idee:** Ausreißer und Normalverteilung  
+- **Daten:** **_Zentren_gesamt.sav_** für **v15_sport**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Explorative Datenanalyse*  
+  - entsprechend Variablen z. B. **v15_sport** oder mehrere auswählen  
+  - *Beides* unten links **AKTIVIEREN**, *Diagramme* oben rechts auswählen und *Stengel-Blatt* **deaktivieren**  
+- **Ausreißer:** mindestens 1,5 × Interquartilsabstand vom Median; hier **36** als Zeilennummer des Ausreißers  
+- Whisker/Schnurrhaare sind Maximum bzw. Minimum (ohne Ausreißer)  
+- graue Box: unteres/oberes Quartil und Median  
+![](/figs/04_grafiken_06.png)
+
+### Editieren von Tabellen und Grafiken: Anpassung vorhandener Ausgaben {.unlisted}
+
+**Relevant: Verschönerung bereits vorhandener statistischer Analysen**
+
+- Tabellen: mit *Rechtsklick* auswählen $\ra$ *Inhalt bearbeiten* **(ganz unten)** $\ra$ in separatem Fenster  
+- Grafiken: **genauso!**
+
+
+
+## Vergleich dichotomer Variablen
+
+### Einführung {.unlisted}
+
+**Schätz- und Testverfahren für den Vergleich dichotomer Variablen**
+
+- dichotome Variablen: zwei Gruppen, z. B. Frauen und Männer  
+- demnach zwei Ausprägungen: 0 und 1 oder 1 und 2 etc.  
+- hier werden oft Raten und Anteile ermittelt, z. B.:  
+  - 64 von 90 Teilnehmern sind Frauen $\ra$ etwa 71,11 %
+
+
+### Kreuztabellen {.unlisted}
+
+**Relevant: deskriptive Beschreibung als erster Schritt; danach statistische Tests**
+
+- **Daten:** **_Zentren_gesamt.sav_** die Variable **v18_chron_Erkrankung** dichotomisieren  
+- **Befehl I:** *Transformieren* $\ra$ *Umcodieren* $\ra$ *Umcodieren in andere Variable*  
+  - [''Leerzeile'']{.crd} $~~\;\ra$ [0]{.ctl}
+  - [''alles andere'']{.crd} $\ra$ [1]{.ctl}  
+- **Befehl II:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Kreuztabellen*  
+  - Zeilen: unabhängige Variable hier **v10_geschlecht**  
+  - Spalte: abhängige Variable hier **v18_chron_Erkrankung_dichotom**  
+  - hier Zeilenprozente: *Zellen* $\ra$ *Prozentwerte* $\ra$ *Zeilenweise*  
+![](/figs/06_dichotome_vars_01.png)
+
+
+### Chi-Quadrat-Tests {.unlisted}
+
+**Relevant: deskriptiver Unterschied könnte auch insignifikant sein, daher stat. Tests**
+
+- **Daten:** **_Zentren_gesamt.sav_** für **v18_chron_Erkrankung_dich** und **v10_geschlecht**
+- **Befehl:** *Analysieren* $\ra$ *Deskriptive Statistiken* $\ra$ *Kreuztabellen*  
+  - *Statistiken* $\ra$ *Chi-Quadrat* anklicken  
+  - H₀: kein Unterschied vs. H₁: es gibt einen Unterschied zwischen Gruppen  
+  - Berechnungsarten: am gebräuchlichsten ist Pearson  
+  - potentiell auch 2×3, 3×2, 3×3 usw. Tabellen möglich  
+![](/figs/06_dichotome_vars_02.png)
