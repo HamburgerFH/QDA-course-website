@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.7.31">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>vorlesung_datenanalyse_spss_i – HFH Veranstaltungswebsite Template</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../include/02_vorlesung_datenanalyse_SPSS_II.html" rel="next">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-e1a5c8363afafaef2c763b6775fbf3ca.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-e7c9d0bdb1642a2257a8709915a57ca6.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script>
+  // Define MathJax macros BEFORE MathJax loads (Quarto handles the order)
+  // Only work in math mode: use $\ra$, not plain \ra in text.
+  window.MathJax = {
+    tex: {
+      macros: {
+        ra:  "\\rightarrow",
+        hra: "\\hookrightarrow",
+        ul:  ["\\underline{#1}", 1]
+      }
+    }
+  };
+</script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN") {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../styles.css">
+</head>
+
+<body class="nav-sidebar docked quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../include/01_vorlesung_datenanalyse_SPSS_I.html">Grundlagen der Datenanalyse 1</a></li><li class="breadcrumb-item"><a href="../include/01_vorlesung_datenanalyse_SPSS_I.html">SPSS Anwendungen 1</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../assets/logo_hfh.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main tools-wide">
+    <div class="dropdown">
+      <a href="" title="" id="quarto-navigation-tool-dropdown-0" class="quarto-navigation-tool dropdown-toggle px-1" data-bs-toggle="dropdown" aria-expanded="false" role="link" aria-label=""><i class="bi bi-github"></i></a>
+      <ul class="dropdown-menu" aria-labelledby="quarto-navigation-tool-dropdown-0">
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/orgs/HamburgerFH/dashboard">
+            Source Code
+            </a>
+          </li>
+          <li>
+            <a class="dropdown-item sidebar-tools-main-item" href="https://github.com/orgs/HamburgerFH/dashboard">
+            Report a Bug
+            </a>
+          </li>
+      </ul>
+    </div>
+    <a href="https://www.linkedin.com/school/hamburger-fern-hochschule/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-linkedin"></i></a>
+    <a href="https://www.youtube.com/user/HFHFernhochschule" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-youtube"></i></a>
+    <a href="https://www.instagram.com/hfhfernstudium/" title="" class="quarto-navigation-tool px-1" aria-label=""><i class="bi bi-instagram"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Grundlagen der Datenanalyse 1</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../include/01_vorlesung_datenanalyse_SPSS_I.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">SPSS Anwendungen 1</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Grundlagen der Datenanalyse 2</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../include/02_vorlesung_datenanalyse_SPSS_II.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SPSS Anwendungen 2</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Grundlagen der Datenanalyse mit SPSS 3</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../include/03_vorlesung_datenanalyse_SPSS_III.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">SPSS Anwendungen 3</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="px-0"><hr class="sidebar-divider hi "></li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true">
+ <span class="menu-text">Komplexe Übung</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../include/04_komplexe_uebung.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Aufgabenstellung</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../about.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">About</span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#grundlagen-der-datenanalyse-mit-spss-i" id="toc-grundlagen-der-datenanalyse-mit-spss-i" class="nav-link active" data-scroll-target="#grundlagen-der-datenanalyse-mit-spss-i">Grundlagen der Datenanalyse mit SPSS (I)</a>
+  <ul class="collapse">
+  <li><a href="#fallbeispiel" id="toc-fallbeispiel" class="nav-link" data-scroll-target="#fallbeispiel">Fallbeispiel</a></li>
+  <li><a href="#verfügbare-datensätze" id="toc-verfügbare-datensätze" class="nav-link" data-scroll-target="#verfügbare-datensätze">Verfügbare Datensätze</a></li>
+  <li><a href="#datenaufbereitung" id="toc-datenaufbereitung" class="nav-link" data-scroll-target="#datenaufbereitung">Datenaufbereitung</a></li>
+  <li><a href="#modifikation-von-variablen" id="toc-modifikation-von-variablen" class="nav-link" data-scroll-target="#modifikation-von-variablen">Modifikation von Variablen</a></li>
+  <li><a href="#sortierung-und-auswahl-von-fällen" id="toc-sortierung-und-auswahl-von-fällen" class="nav-link" data-scroll-target="#sortierung-und-auswahl-von-fällen">Sortierung und Auswahl von Fällen</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../include/01_vorlesung_datenanalyse_SPSS_I.html">Grundlagen der Datenanalyse 1</a></li><li class="breadcrumb-item"><a href="../include/01_vorlesung_datenanalyse_SPSS_I.html">SPSS Anwendungen 1</a></li></ol></nav></header>
+
+
+
+
+<section id="grundlagen-der-datenanalyse-mit-spss-i" class="level1">
+<h1>Grundlagen der Datenanalyse mit SPSS (I)</h1>
+<section id="einführung" class="level2 unlisted">
+<h2 class="unlisted anchored" data-anchor-id="einführung">Einführung</h2>
+<section id="einleitung---motivation" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="einleitung---motivation">Einleitung - Motivation</h3>
+<ul>
+<li><p>Statistische und quantitative Methoden</p>
+<ul>
+<li>Ziel: Wiederholung und Vertiefung des theoretischen Wissens im Bereich der Statistik und empirischen Wirtschaftsforschung aus den Modulen Statistik I und II</li>
+</ul></li>
+<li><p>Software und praktische Arbeit:</p>
+<ul>
+<li>praktische Anwendung statististischer Verfahren mithilfe von SPSS</li>
+</ul></li>
+<li><p>Arbeit mit Daten:</p>
+<ul>
+<li>Generierung, Aufbereitung, Analyse und grafische Darstellung</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="fallbeispiel" class="level2">
+<h2 class="anchored" data-anchor-id="fallbeispiel">Fallbeispiel</h2>
+<section id="vorstellung-des-anwendungsbeispiels---motivation" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="vorstellung-des-anwendungsbeispiels---motivation">Vorstellung des Anwendungsbeispiels - Motivation</h3>
+<ul>
+<li>Fallstudie fiktiv, aber <strong><em>anwendungsnah</em></strong></li>
+<li>Datenerhebung aus dem Gesundheitswesen</li>
+<li>Datenaufbereitung, deskriptive Auswertung und multivariate statistische Analyse <img src="../figs/01_klinikverbund.png" class="img-fluid"></li>
+</ul>
+</section>
+<section id="vorstellung-des-anwendungsbeispiels---motivation-1" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="vorstellung-des-anwendungsbeispiels---motivation-1">Vorstellung des Anwendungsbeispiels - Motivation</h3>
+<ul>
+<li>aus drei Zentren jeweils 30 Patienten und Patientinnen</li>
+<li>Patienten und Patientinnen erklären sich bereit über die PatientenID (im Bogen vermerkt) zur Zusammenlegung der Daten</li>
+<li>Somit können Routine- und Befragungsdaten (aus den Fragebögen) zusammengelegt werden</li>
+<li><u><strong><em>Ziel:</em></strong></u> Datenaufbereitung um zB. folgende Forschungsfragen zu adressieren</li>
+<li>Welche Charakteristika weisen die Teilnehmer:innen der Reha-Maßnahme auf?</li>
+<li>Gibt es Unterschiede in der Patientenzufriedenheit zwischen den drei Zentren?</li>
+<li>Falls es Unterschiede gibt, wie lassen sie sich erklären ?</li>
+<li>Welche Faktoren beeinflussen die Patientenzufriedenheit?</li>
+</ul>
+</section>
+</section>
+<section id="verfügbare-datensätze" class="level2">
+<h2 class="anchored" data-anchor-id="verfügbare-datensätze">Verfügbare Datensätze</h2>
+<section id="fragebogendesign" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="fragebogendesign">Fragebogendesign</h3>
+<ul>
+<li><p>Speziell zur Evaluation der Patientenzufriedenheit der drei Reha-Zentren entwickelt</p></li>
+<li><p>Es gibt unterschiedliche Antwortformate:</p>
+<ul>
+<li><strong>geschlossen</strong> z.B. Fragen Fragen 1 – 9 <span class="math inline">\(\rightarrow\)</span> Befragten müssen sich entweder auf eine vorgegebene Antwortkategorie festlegen</li>
+<li><strong>halb-offen</strong> z.B. Frage 13: Befragten müssen eigenständig einen Wert in einem fest vorgegebenen Format angeben</li>
+<li><strong>offen</strong> z.B. Frage 18: Befragten müssen eigenständig Angaben zu ihren chronischen Erkrankungen in Textform machen. Solche Fragetypen wählt man insbesondere dann, wenn man sich im Vorfeld unsicher bezüglich möglicher Antworten ist.</li>
+</ul></li>
+<li><p>Inhaltlich gibt es <strong>vier</strong> unterschiedliche Bereiche: <strong>a. - d.</strong></p></li>
+</ul>
+</section>
+<section id="fragebogendesign-1" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="fragebogendesign-1">Fragebogendesign</h3>
+<p><img src="../figs/01_fragebogen_teil_I.png" class="img-fluid"></p>
+</section>
+<section id="fragebogendesign-2" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="fragebogendesign-2">Fragebogendesign</h3>
+<p><img src="../figs/01_fragebogen_teil_II.png" class="img-fluid"></p>
+</section>
+<section id="routinedaten---vorstellung" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="routinedaten---vorstellung">Routinedaten - Vorstellung</h3>
+<p>Routinedaten sind</p>
+<ul>
+<li>personenspezifischen Daten</li>
+<li>die aus dem Krankenausinformationssystem der drei Zentren extrahiert werden</li>
+<li>liegen als Excelfile vor</li>
+</ul>
+<p>Das Excelfile besteht aus einer Tabelle mit folgenden Spalten:</p>
+<ul>
+<li><p><strong>v1_ID:</strong> Identifikationsnummer des Patienten oder der Patientin</p></li>
+<li><p><strong>ICD_HD:</strong> ICD-Kodierung (Hauptdiagnose)</p></li>
+<li><p><strong>AUFN_DATUM:</strong> Datum der Aufnahme in die Klinik</p></li>
+<li><p><strong>ENTL_DATUM:</strong> Datum der Entlassung aus der Klinik</p></li>
+</ul>
+<p><img src="../figs/01_routinedaten.png" class="img-fluid"></p>
+</section>
+<section id="routinedaten---vorstellung-1" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="routinedaten---vorstellung-1">Routinedaten - Vorstellung</h3>
+<p>Insgesamt gibt es sieben Dateien:</p>
+<ul>
+<li><strong>Zentrum1.sav, Zentrum2.sav, Zentrum3.sav:</strong> Fragebogendaten für jedes einzelne Rehabilitationszentrum</li>
+<li><strong>Zentren_gesamt.sav:</strong> Fragebogendaten aller Zentren zusammengefügt</li>
+<li><strong>Zentrum1_Spieldaten.sav:</strong> zu Übungszwecken unplausible Daten mit Eingabefehler einprogrammiert !</li>
+<li><strong>Routinedaten.sav:</strong> Routinedaten mit allen 90 Patienten:innen im SPSS-Format</li>
+<li><strong>Routinedaten.xlsx:</strong> wie oben nur im Excel-Format</li>
+</ul>
+<p><img src="../figs/01_verfuegbare_daten.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="datenaufbereitung" class="level2">
+<h2 class="anchored" data-anchor-id="datenaufbereitung">Datenaufbereitung</h2>
+<section id="kodierung-und-kodeplan" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="kodierung-und-kodeplan">Kodierung und Kodeplan</h3>
+<p><strong>Ein Kodeplan:</strong></p>
+<ul>
+<li>ordnet den einzelnen Fragen des Fragebogens Variablennamen zu</li>
+<li>ordnet den Merkmalsausprägungen einer Variablen Kodenummern zu</li>
+<li>stellt sicher, dass jede Frage eindeutig später eindeutig identifizierbar ist</li>
+</ul>
+<p><u><span class="math inline">\(\ra\)</span> <em>Beispiel: SB 01, Anhang 2 auf S.65</em></u></p>
+<p><u><strong>Erläuterugen:</strong></u></p>
+<p><img src="../figs/01_kodeplan_erlaeuterung.png" class="img-fluid"></p>
+</section>
+<section id="anlegen-von-variablen-und-fehlende-werte" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="anlegen-von-variablen-und-fehlende-werte">Anlegen von Variablen und fehlende Werte</h3>
+<p><u><strong>Anlegen neuer Variablen:</strong></u></p>
+<ul>
+<li>In der Variablenansicht (unten links) einfach neue Zeile definieren</li>
+<li>Ausfüllen der Spalten von links nach rechts</li>
+<li>Orientierung am Kodeplan</li>
+<li>manche Sonderzeichen nicht erlaubt wie zB. <strong>!, ?, *</strong>; siehe SB 01 S.28</li>
+</ul>
+<p><u><strong>Beispiel:</strong></u></p>
+<p><img src="../figs/01_anlegen_var_01.png" class="img-fluid"></p>
+<p><img src="../figs/01_anlegen_var_02.png" class="img-fluid"></p>
+<p><img src="../figs/01_anlegen_var_03.png" class="img-fluid"></p>
+<ul>
+<li><strong>Fehlende Werte:</strong>
+<ul>
+<li>Bei fast jeder empirischen Erhebung gibt es fehlende Werte</li>
+</ul></li>
+<li><strong>Benutzerdefinierte fehlende Werte:</strong>
+<ul>
+<li>Der Benutzer legt einen Wert fest, der einzugeben ist, wenn eine Person keine Angabe gemacht hat</li>
+</ul></li>
+<li><strong>Systemdefinierte fehlende Werte:</strong>
+<ul>
+<li>entsprechende Zelle einfach in der Datenansicht frei zu lassen; falls numerische Werten nicht aufgefüllt, dann wird dies SPSS intern als systemdefinierter fehlender Wert abgespeichert</li>
+</ul></li>
+</ul>
+<p><img src="../figs/01_anlegen_var_04.png" class="img-fluid"></p>
+</section>
+<section id="messniveau-und-variablen-zusammenführung" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="messniveau-und-variablen-zusammenführung">Messniveau und Variablen Zusammenführung:</h3>
+<ul>
+<li>wie aus Statistik 1 bekannt: nominal, ordinal oder metrisch (was intervall- , absolut und verhältnisskaliert beinhaltet)</li>
+<li>Messniveau bestimmt Anwendbarkeit statistischer Verfahren</li>
+<li>Variablen löschen oder Verschieben in den Zeilen der Datenansicht möglich.</li>
+<li>Manuelle Dateneingabe im Editor: ebenfalls möglich, am besten auch <strong>zeilenweise</strong></li>
+</ul>
+<p><img src="../figs/01_anlegen_var_05.png" class="img-fluid"></p>
+<p><strong>Fallweise Zusammenfügen:</strong></p>
+<ul>
+<li>wann möglich: exakt gleiche Variablen (also Spalten)</li>
+<li>fallweise bedeutet hier <strong>zeilenweise</strong></li>
+</ul>
+<p><strong>Variablenweise Zusammenfügen:</strong></p>
+<ul>
+<li>wann möglich: geeignete Schlüsselvariable (zur eindeutigen Fallidentifikation)</li>
+<li>beachten: vorher beide Datensätze nach der Schlüsselvariable sortieren</li>
+</ul>
+<p><strong>Beispiel:</strong></p>
+<ol type="1">
+<li><strong>Zentrum1.sav</strong> und <strong>Zentrum2.sav</strong> fallweise zusammengefügen<br>
+</li>
+<li><strong>Zentren_gesamt.sav</strong> und <strong>Routinedaten.sav</strong> variablenweise zusammengefügen</li>
+<li><strong>Befehl:</strong> <strong>Daten</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Dateien zusammenfügen</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Fälle hinzufügen</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Variablen hinzufügen</strong></li>
+</ol>
+</section>
+<section id="datenprüfung" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="datenprüfung">Datenprüfung</h3>
+<p><strong>Prüfung der Daten auf Plausibilität und Korrektheit:</strong></p>
+<ul>
+<li>Grund: bei der Dateneingabe oder Datenübertragung entstehen viele Fehler</li>
+<li>Überblick: einmal grob (aber achtsam) über den Datensatz scrollen, dabei zu große oder kleine oder fehlende Werte besonders beachten</li>
+<li>kurze deskriptive Analysen ! siehe nächste slides</li>
+</ul>
+<p><strong>Häufigkeitszählungen:</strong></p>
+<ul>
+<li><p><strong>Beispiel:</strong> <strong>Zentrum1_Spieldaten.sav</strong> für <strong>v16_freizeit</strong></p></li>
+<li><p><strong>Befehl:</strong> <strong>Analysieren</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Deskriptive Statistiken</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Häufigkeiten</strong></p></li>
+<li><p>26 von 30 haben Angaben gemacht: keine Angabe und systemdefinierte fehlende Werte liefern 4 fehlende Werte insgesamt</p></li>
+<li><p>12 Personen haben bis zu 2 Freizeitangebote genutzt, 10 haben zw. 3-6 genutzt</p></li>
+<li><p>eine Person gab 5, eine andere 7 an; <strong>siehe Kodeplan sind dies keine zulässigen Möglichkeiten ! hier müsste man manuell die beiden Einträge zu &gt; 6 ändern</strong></p></li>
+</ul>
+<p><img src="../figs/01_datenpruefung_haeufigkeiten.png" class="img-fluid"></p>
+<p><strong>Berechnung von Kennwerten:</strong> <strong>Minimum, Maximum, Modus, Median, Mittelwert</strong></p>
+<ul>
+<li><strong>Beispiel:</strong> <strong>Zentrum1_Spieldaten.sav</strong> für <strong>v13_1_gew_vor</strong> und <strong>v13_2_gew_nach</strong></li>
+<li><strong>Befehl:</strong> <strong>Analysieren</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Deskriptive Statistiken</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Häufigkeiten</strong></li>
+<li>Häufigkeitstabelle deaktivieren aber dafür <strong>Statistik</strong> öffnen und obiges auswählen</li>
+<li><strong>v13_1_gew_vor</strong> ist Maximum 700, aber <strong>v13_2_gew_nach</strong> hat Maximum 128; unwahrscheinlich</li>
+<li>Mittelwert, Median und Modus bei <strong>v13_2_gew_nach</strong> nah beieinander, aber <strong>v13_1_gew_vor</strong> weit auseinander</li>
+</ul>
+<p><img src="../figs/01_datenpruefung_kennwerte.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="modifikation-von-variablen" class="level2">
+<h2 class="anchored" data-anchor-id="modifikation-von-variablen">Modifikation von Variablen</h2>
+<section id="umcodieren-von-variablen" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="umcodieren-von-variablen">Umcodieren von Variablen</h3>
+<p>Änderung von Variablenausprägungen (kurz um andere Werte)</p>
+<ul>
+<li><p><strong>Beispiel:</strong> im Fragebogen sind Einzelitems nicht notwendigerweise gleichgerichtet</p></li>
+<li><p><strong>Daten:</strong> <strong>Zentrum1_Spieldaten.sav</strong> für</p>
+<ol type="1">
+<li><strong>v2_zuf</strong>, <strong>v4_zuf</strong>, <strong>v7_zuf</strong>, und <strong>v8_zuf</strong>: umcodieren in dieselbe Variable</li>
+<li><strong>v1_alter</strong>: umcodieren in andere Variable <strong>v1_alter_kat</strong>: &lt;50, 51-55, 56+</li>
+</ol></li>
+<li><p><strong>Befehl:</strong> <strong>Transformieren</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Umcodieren</strong>:</p>
+<ol type="1">
+<li><span class="math inline">\(\rightarrow\)</span> <strong>Umcodieren in dieselbe Variable</strong> Auswahl <strong>einer oder mehrerer Variablen</strong>, danach: 1 <span class="math inline">\(\rightarrow\)</span> 4, 2 <span class="math inline">\(\rightarrow\)</span> 3, 3 <span class="math inline">\(\rightarrow\)</span> 2, 4 <span class="math inline">\(\rightarrow\)</span> 1</li>
+<li><span class="math inline">\(\rightarrow\)</span> <strong>Umcodieren in andere Variable</strong> – Auswahl <strong>v1_alter</strong>, danach:
+<ul>
+<li>‘<strong>Bereich, KLEINSTER Wert bis</strong>’ <span class="math inline">\(\rightarrow\)</span> 1</li>
+<li>‘<strong>Bereich 51 - 55</strong>’ <span class="math inline">\(\rightarrow\)</span> 2</li>
+<li>‘<strong>Bereich, Wert bis GRÖSSTER Wert</strong>’ <span class="math inline">\(\rightarrow\)</span> 3</li>
+</ul></li>
+</ol></li>
+<li><p>Umcodieren von String Variablen: wie oben aber ‘<strong>Wert</strong>’ zB. ‘Hypertonie’ eingeben</p></li>
+<li><p>Es gibt die Schaltfläche <strong>Falls</strong>; hier z.B. Geschlecht = 1 o.ä. möglich</p></li>
+</ul>
+</section>
+<section id="berechnung-neuer-variablen-aus-alten-variablen" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="berechnung-neuer-variablen-aus-alten-variablen">Berechnung neuer Variablen aus alten Variablen</h3>
+<ul>
+<li><p><strong>Beispiel 1:</strong> Berechnung eines <strong>Summenscores</strong> aus Variablen <strong>v1 - v9</strong></p></li>
+<li><p><strong>Beispiel 2:</strong> Berechnung eines <strong>BMI</strong> aus Variablen <strong>v13_1_gew_vor</strong> und <strong>v12_größe</strong></p></li>
+<li><p><strong>Daten und Befehl:</strong> <strong>Zentrum1_Spieldaten.sav</strong><br>
+mit Befehl <strong>Transformieren</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Variable berechnen</strong> für</p>
+<ol type="1">
+<li><strong>v1 - v9</strong> mit + verbinden</li>
+<li><strong>v13_1_gew_vor</strong> / <strong>v12_größe ** 2</strong></li>
+</ol></li>
+<li><p>Hinweis: funktioniert nur falls keine fehlenden Werte !</p></li>
+<li><p>Verschiedene Numerische Operatoren und Funktionen vorhanden</p></li>
+<li><p>Datumsmanipulation:</p>
+<ul>
+<li><em>Dauer_Aufenthalt = DATEDIFF(ENTL_DATUM, AUFN_Datum, “days”)</em></li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="sortierung-und-auswahl-von-fällen" class="level2">
+<h2 class="anchored" data-anchor-id="sortierung-und-auswahl-von-fällen">Sortierung und Auswahl von Fällen</h2>
+<section id="sortierung-von-fällen" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="sortierung-von-fällen">Sortierung von Fällen</h3>
+<p><strong>Sortierung erleichtert Überblick über Häufigkeiten, Max., Min. etc.</strong></p>
+<ul>
+<li><strong>Daten:</strong> <strong>Zentrum1_Spieldaten.sav</strong> für
+<ol type="1">
+<li><strong>v16_freizeit</strong></li>
+<li><strong>v10_geschlecht</strong> und danach <strong>v16_freizeit</strong></li>
+</ol></li>
+<li><strong>Befehl:</strong> <strong>Daten</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Fälle sortieren</strong>
+<ul>
+<li>Sortieren nach Fenster entsprechend ausfüllen</li>
+<li><strong>aufsteigend</strong> vs.&nbsp;<strong>absteigend</strong> beachten</li>
+<li>Reihenfolge relevant, da erst nach der ersten, und danach nach den folgenden Variablen sortiert wird.</li>
+</ul></li>
+</ul>
+</section>
+<section id="fallauswahl-unter-bedingung" class="level3 unlisted">
+<h3 class="unlisted anchored" data-anchor-id="fallauswahl-unter-bedingung">Fallauswahl unter Bedingung</h3>
+<p><strong>In der Regel temporär, aber permanent und zufällig auch möglich</strong></p>
+<ul>
+<li><p><strong>Daten:</strong> <strong>Zentrum1_Spieldaten.sav</strong> für <strong>v10_geschlecht</strong></p></li>
+<li><p><strong>Befehl:</strong> <strong>Daten</strong> <span class="math inline">\(\rightarrow\)</span> <strong>Fälle auswählen</strong></p>
+<ul>
+<li>statt <strong>Alle Fälle</strong> einfach <strong>Falls Bedingung zutrifft</strong> auswählen</li>
+<li>entsprechend Einstellung vornehmen zB. <strong>v10_geschlecht=1</strong></li>
+</ul></li>
+<li><p>Temporäre Fallauswahl ist der default</p></li>
+<li><p>Falls permanent gewünscht, <strong>Ausgewählte Fälle in neues Datenblatt kopieren</strong> oder <strong>Nicht ausgewählte Fälle löschen</strong> (<strong>ACHTUNG: Sicherheitskopie ratsam</strong>)</p></li>
+<li><p>statt <strong>Falls Bedingung zutrifft</strong> einfach <strong>Zufallsstichprobe</strong> auswählen und gewünschte Einstellungen vornehmen</p></li>
+</ul>
+
+
+</section>
+</section>
+</section>
+
+<a onclick="window.scrollTo(0, 0); return false;" role="button" id="quarto-back-to-top"><i class="bi bi-arrow-up"></i> Back to top</a></main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+        const codeEl = trigger.previousElementSibling.cloneNode(true);
+        for (const childEl of codeEl.children) {
+          if (isCodeAnnotation(childEl)) {
+            childEl.remove();
+          }
+        }
+        return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../include/02_vorlesung_datenanalyse_SPSS_II.html" class="pagination-link" aria-label="SPSS Anwendungen 2">
+        <span class="nav-page-text">SPSS Anwendungen 2</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Copyright 2025, Ilya Zarubin</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      <ul class="footer-items list-unstyled">
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/ilyaZar/">
+      <i class="bi bi-github" role="img">
+</i> 
+    </a>
+  </li>  
+    <li class="nav-item compact">
+    <a class="nav-link" href="https://x.com/ilyaazarubin">
+      <i class="bi bi-twitter" role="img">
+</i> 
+    </a>
+  </li>  
+</ul>
+    </div>
+  </div>
+</footer>
+
+
+
+
+</body></html>
